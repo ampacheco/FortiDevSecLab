@@ -13,5 +13,10 @@ jobs:
         uses: tkottke90/markdown-to-docx@4434ac625d20fe97befa52f6c50eba0478f353ca
         with:
           output-name: 'MyReadme.docx'
+      
+      - name: 🏷️ Commit and Label 
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: DOCX File Generated
           
         
