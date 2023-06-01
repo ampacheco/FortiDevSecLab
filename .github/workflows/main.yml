@@ -28,9 +28,17 @@ jobs:
           # git push origin master
 
 
-        # Pushing to Repo
-      - name: Push Changes
-        uses: ad-m/github-push-action@master
+      # # Pushing to Repo
+      # - name: Push Changes
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     branch: main
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
         with:
-          branch: main
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          author_name: 'Bot'
+          author_email: '<>'
+          message: 'Docx file generated.'
