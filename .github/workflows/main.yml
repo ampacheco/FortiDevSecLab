@@ -13,28 +13,15 @@ jobs:
         uses: tkottke90/markdown-to-docx@4434ac625d20fe97befa52f6c50eba0478f353ca
         with:
           output-name: 'MyReadme.docx'
+
+      - name: Check
+        run: ls
       
       - name: 👩‍💻 setup git config
         run: |
           # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-
-      - name: 🏷️ commit
-        run: |
-          # Stage the file, commit and push
-          git add MyReadme.docx
-          git commit -m "Docx File Created."
-          # git push origin master
-
-
-      # # Pushing to Repo
-      # - name: Push Changes
-      #   uses: ad-m/github-push-action@master
-      #   with:
-      #     branch: main
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
