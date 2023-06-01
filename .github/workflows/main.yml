@@ -25,4 +25,9 @@ jobs:
           # Stage the file, commit and push
           git add MyReadme.docx
           git commit -m "Docx File Created."
-          git push origin master
+          # git push origin master
+
+      - name: Push Changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: main
