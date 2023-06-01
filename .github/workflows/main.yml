@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Generate readme document
-        uses: tkottke90/markdown-to-docx@v1
+        uses: tkottke90/markdown-to-docx@main
         with:
           output-name: 'MyReadme.docx'
           
