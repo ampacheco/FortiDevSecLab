@@ -5,4 +5,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: Generate readme document
+        uses: tkottke90/markdown-to-docx
+        with:
+            output-name: 'MyReadme.docx'
