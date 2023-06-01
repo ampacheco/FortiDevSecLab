@@ -42,3 +42,4 @@ jobs:
           author_name: 'Bot'
           author_email: '<>'
           message: 'Docx file generated.'
+          add: '*.docx'
